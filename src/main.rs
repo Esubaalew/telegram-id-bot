@@ -105,16 +105,6 @@ fn get_age_estimate(user_id: u64) -> (String, String) {
     ("unknown".to_string(), "unknown".to_string())
 }
 
-fn escape_markdown_v2(text: &str) -> String {
-    text.chars()
-        .map(|c| match c {
-            '_' | '*' | '[' | ']' | '(' | ')' | '~' | '`' | '>' | '#' | '+' | '-' | '=' | '|' | '{' | '}' | '.' | '!' => {
-                format!("\\{}", c)
-            }
-            _ => c.to_string(),
-        })
-        .collect()
-}
 
 fn format_user_info(user: &teloxide::types::User, title: &str) -> String {
     let mut info = format!("👤 {}\n", title);
