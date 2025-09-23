@@ -15,7 +15,7 @@ A clean Rust Telegram bot that analyzes user and forwarded message information w
 
 2. Set the required environment variables:
    ```bash
-   export TELOXIDE_TOKEN="5668107317:AAGvMk3FxaA5ZGPFc4yYl6zHlksT8CJSDOg"
+   export TELOXIDE_TOKEN="56681073179392392032032030230:AAGvMk3FxaA5ZGPFc4yYl6zHlksT8g"
    export WEBHOOK_URL="https://yourdomain.com/webhook"
    export PORT="3000"  # Optional, defaults to 3000
    export HOST="0.0.0.0"  # Optional, defaults to 0.0.0.0
@@ -29,7 +29,7 @@ A clean Rust Telegram bot that analyzes user and forwarded message information w
 
    Or run directly with all environment variables:
    ```bash
-   TELOXIDE_TOKEN="5668107317:AAGvMk3FxaA5ZGPFc4yYl6zHlksT8CJSDOg" \
+   TELOXIDE_TOKEN="5668107317:AA283492389423202GvMk3FxaA5ZGPFc4290230932yYl6zHlksT8CJSDOg" \
    WEBHOOK_URL="https://yourdomain.com/webhook" \
    PORT="3000" \
    cargo run
@@ -69,6 +69,6 @@ For production deployment, you'll need:
 
 ## Bot Token
 
-The bot token is: `5668107317:AAGvMk3FxaA5ZGPFc4yYl6zHlksT8CJSDOg`
+The bot token is: `566810we02392300320327317:AAGvMk3FxaA5ZGPFc4y002302303Yl6zHlksT8CJSDOg`
 
 Make sure to set it as the `TELOXIDE_TOKEN` environment variable before running the bot.
