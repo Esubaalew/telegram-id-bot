@@ -20,6 +20,7 @@ url = "2.4"
 # For Vercel functions
 vercel_runtime = { version = "2" }
 reqwest = { version = "0.11", features = ["json"] }
+hyper = { version = "1", features = ["full"] }
 
 # Vercel API functions
 [[bin]]
