@@ -1,6 +1,6 @@
 use serde_json::{json, Value};
 use vercel_runtime::{Error, Request, service_fn, run};
-use hyper::body::to_bytes;
+use http_body_util::BodyExt;
 use std::collections::HashMap;
 use chrono::{DateTime, Datelike};
 
@@ -190,8 +190,8 @@ async fn handler(req: Request) -> Result<Value, Error> {
     }
 
     // Parse the request body
-    let body_bytes = match to_bytes(req.into_body()).await {
-        Ok(bytes) => bytes,
+    let body_bytes = match req.into_body().collect().await {
+        Ok(collected) => collected.to_bytes(),
         Err(e) => {
             eprintln!("Failed to read request body: {}", e);
             return Ok(json!({ "error": "Invalid request body" }));
