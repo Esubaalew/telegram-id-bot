@@ -3,6 +3,10 @@ name = "webhook"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "main"
+path = "main.rs"
+
 [dependencies]
 vercel_runtime = "1.1.0"
 tokio = { version = "1.0", features = ["macros"] }
@@ -13,7 +17,3 @@ chrono = { version = "0.4", features = ["serde"] }
 log = "0.4"
 url = "2.4"
 reqwest = { version = "0.11", features = ["json"] }
-
-[lib]
-name = "webhook"
-crate-type = ["cdylib"]

@@ -2,11 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/webhook/main.rs",
+      "src": "api/webhook/Cargo.toml",
       "use": "vercel-rust"
     },
     {
-      "src": "api/health/main.rs", 
+      "src": "api/health/Cargo.toml", 
       "use": "vercel-rust"
     }
   ],
