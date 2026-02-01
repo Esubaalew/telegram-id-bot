@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/webhook/main.rs",
+      "use": "vercel-rust"
+    },
+    {
+      "src": "api/health/main.rs", 
+      "use": "vercel-rust"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/webhook",
+      "dest": "/api/webhook"
+    },
+    {
+      "src": "/health",
+      "dest": "/api/health"
+    },
+    {
+      "src": "/",
+      "dest": "/api/health"
+    }
+  ],
+  "env": {
+    "TELOXIDE_TOKEN": "@teloxide_token",
+    "WEBHOOK_URL": "@webhook_url"
+  }
+}
