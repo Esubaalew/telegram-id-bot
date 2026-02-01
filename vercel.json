@@ -23,9 +23,5 @@
       "src": "/",
       "dest": "/api/health"
     }
-  ],
-  "env": {
-    "TELOXIDE_TOKEN": "@teloxide_token",
-    "WEBHOOK_URL": "@webhook_url"
-  }
+  ]
 }
