@@ -1,0 +1,17 @@
+{
+  "name": "telegram-id-bot",
+  "version": "1.0.0",
+  "description": "Telegram ID Analyzer Bot - Get detailed user info and account age estimates",
+  "main": "api/webhook.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "id-analyzer",
+    "user-info"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
