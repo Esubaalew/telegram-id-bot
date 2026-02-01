@@ -1,7 +1,7 @@
 use serde_json::{json, Value};
-use vercel_runtime::{Error, Request, service_fn, run, Body};
+use vercel_runtime::{Error, Request, service_fn, run};
 use std::collections::HashMap;
-use chrono::{DateTime, Datelike, Utc};
+use chrono::{DateTime, Datelike};
 
 // Age estimation data
 fn get_age_data() -> HashMap<u64, u64> {
